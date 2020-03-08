@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grafico Chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+  </head>
+  <body>
+    <canvas id="myChart" width="400" height="400"> </canvas>
+
+    <script>
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var myChart = new Chart(ctx, {
+        type: "pie" /* tipo de grafico */,
+        data: {
+          labels: ["col1", "col2", "col3"] /* datos */,
+          datasets: [
+            {
+              label: "Num datos" /* label de titulo */,
+              data: [10, 9, 15] /* valores de los datos */,
+              backgroundColor: [
+                /* colores */
+                "rgb(66, 134, 244,0.5)",
+                "rgb(74, 135, 72,0.5)",
+                "rgb(229, 89, 50,0.5)"
+              ]
+            }
+          ]
+        },
+        options: {
+          /* esto lo hace visible en graficos tipo bar */
+          scales: {
+            yAxes: [
+              /* en el eje y */
+              {
+                ticks: {
+                  beginAtZero: true /*  que comienze desde cero  */
+                }
+              }
+            ]
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

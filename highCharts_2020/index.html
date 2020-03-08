@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>HighCharts Desde Cero</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center text-light">Tutorial</h1>
+      <h2 class="text-center text-light">
+        Como usar <span class="badge badge-success">HighCharts JS</span>
+      </h2>
+    </header>
+    <div class="text-center">
+        <div class="btn-group" role="group" aria-label="">
+            <button id="btnColumnas" type="button" class="btn btn-secondary">Columnas</button>
+            <button id="btnLineas" type="button" class="btn btn-primary">Lineas</button>
+            <button id="btnBD" type="button" class="btn btn-info">Graficos con BD</button>
+            <button id="btnTorta" type="button" class="btn btn-danger">Torta</button>
+            <button id="btnPrueba" type="button" class="btn btn-warning">Primera Forma</button>
+            <button id="btnPrueba2" type="button" class="btn btn-secondary">Segunda Forma</button>
+            <button id="btnPrueba3" type="button" class="btn btn-success">Tercera Forma</button>
+        </div>
+        <!-- grafico modal -->
+        <div id="contenedor" style="min-width: 320px; height: 400px; margin: 0 auto;"></div>
+  
+    <!-- Modal para mis graficos-->
+    <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <!-- grafico a mostrar -->
+                <div id="contenedor-modal" style="min-width: 400px; height: 400px; margin: 0 auto;"></div>
+                
+            </div>
+            
+            </div>
+        </div>
+        </div>
+    </div>    
+        </div>
+    
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="jquery-3.3.1.min.js"></script> -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="plugins/highCharts/code/highcharts.js"></script>
+    <script src="plugins/highCharts/code/modules/exporting.js"></script>
+    <script src="plugins/highCharts/code/modules/export-data.js"></script>
+    <script src="plugins/highCharts/code/modules/drilldown.js"></script>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
